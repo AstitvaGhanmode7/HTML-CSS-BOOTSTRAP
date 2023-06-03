@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <br />
+    <!-- Navbar Starter -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ended -->
+    <hr />
+
+    <!-- Carousel Started -->
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="false"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/249/973/174/anime-jujutsu-kaisen-yuji-itadori-hd-wallpaper-preview.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/470/652/917/anime-naruto-naruto-uzumaki-sasuke-uchiha-wallpaper-preview.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://c4.wallpaperflare.com/wallpaper/94/797/206/kimi-no-na-wa-makoto-shinkai-starry-night-comet-wallpaper-preview.jpg"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Carousel Ended -->
+    <hr />
+    <!-- Card Strated -->
+
+    <div class="card" style="width: 18rem">
+      <img
+        src="data:image/jpeg;base64,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"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+    <!-- Card Ended -->
+    <hr />
+    <!-- Accordian Started -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne"
+            aria-expanded="false"
+            aria-controls="flush-collapseOne"
+          >
+            What is JVM ?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseOne"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            first item's accordion body.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo"
+            aria-expanded="false"
+            aria-controls="flush-collapseTwo"
+          >
+            What is JRE ?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseTwo"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            second item's accordion body. Let's imagine this being filled with
+            some actual content.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button
+            class="accordion-button collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree"
+            aria-expanded="false"
+            aria-controls="flush-collapseThree"
+          >
+            Features of Java ?
+          </button>
+        </h2>
+        <div
+          id="flush-collapseThree"
+          class="accordion-collapse collapse"
+          aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            Placeholder content for this accordion, which is intended to
+            demonstrate the <code>.accordion-flush</code> class. This is the
+            third item's accordion body. Nothing more exciting happening here in
+            terms of content, but just filling up the space to make it look, at
+            least at first glance, a bit more representative of how this would
+            look in a real-world application.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accordian Ended-->
+    <hr />
+    <!-- Footer Started -->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Company name
+              </h6>
+              <p>
+                Here you can use rows and columns to organize your footer
+                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit.
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+              <p>
+                <a href="#!" class="text-reset">Angular</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">React</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Vue</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Laravel</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+              <p>
+                <a href="#!" class="text-reset">Pricing</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Settings</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Orders</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Help</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+              <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div
+        class="text-center p-4"
+        style="background-color: rgba(0, 0, 0, 0.05)"
+      >
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
+          >MDBootstrap.com</a
+        >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <hr />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
